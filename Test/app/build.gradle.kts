@@ -1,6 +1,9 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
+    alias(libs.plugins.hilt)
+    alias(libs.plugins.kapt)
+    alias(libs.plugins.kotlin.parcelize)
 }
 
 android {
@@ -45,4 +48,22 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+
+    implementation(libs.hilt.android)
+    kapt(libs.hilt.compiler)
+
+    implementation(libs.bundles.retrofit)
+    implementation(libs.bundles.retrofit.serialization)
+    implementation(libs.okhttp3.logging.interceptor)
+
+    implementation(libs.androidx.lifecycle.runtime)
+    implementation(libs.androidx.lifecycle.viewModel)
+    implementation(libs.androidx.lifecycle.savedState)
+
+    implementation(libs.androidx.fragment)
+
+    implementation(libs.glide)
+    kapt(libs.glide.compile)
+
+    implementation(libs.paging.runtime)
 }
