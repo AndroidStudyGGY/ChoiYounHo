@@ -21,3 +21,6 @@ dependencyResolutionManagement {
 
 rootProject.name = "MovieTicketing"
 include(":app")
+include(":data")
+include(":domain")
+include(":remote")
