@@ -6,5 +6,6 @@ object ApiInfo {
 
     object EndPoints {
         const val SEARCH = "webservice/rest/movie/searchMovieList.json"
+        const val DETAIL = "webservice/rest/movie/searchMovieInfo.json"
     }
 }
