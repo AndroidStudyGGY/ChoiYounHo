@@ -11,14 +11,20 @@ composeBom = "2024.04.01"
 appcompat = "1.6.1"
 material = "1.10.0"
 
+paging = "3.3.1"
+
 hilt = "2.51"
 
 ksp = "1.9.0-1.0.13"
+
+androidxLifecycle = "2.7.0"
+androidxComposeNavigation = "2.7.7"
 
 okhttp3 = "4.10.0"
 retrofit = "2.9.0"
 retrofitSerialization = "1.0.0"
 kotlinxSerializationJson = "1.5.1"
+core = "1.44.0"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -28,6 +34,9 @@ androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-co
 androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycleRuntimeKtx" }
 androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activityCompose" }
 androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
+androidx-compose-paging = { group = "androidx.paging", name = "paging-compose", version.ref = "paging" }
+androidx-compose-paging-common = { group = "androidx.paging", name = "paging-common", version.ref = "paging" }
+androidx-compose-navigation = { group = "androidx.navigation", name = "navigation-compose", version.ref = "androidxComposeNavigation" }
 androidx-ui = { group = "androidx.compose.ui", name = "ui" }
 androidx-ui-graphics = { group = "androidx.compose.ui", name = "ui-graphics" }
 androidx-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
@@ -40,6 +49,7 @@ material = { group = "com.google.android.material", name = "material", version.r
 
 hilt-android = { group = "com.google.dagger", name = "hilt-android", version.ref = "hilt" }
 hilt-compiler = { group = "com.google.dagger", name = "hilt-android-compiler", version.ref = "hilt" }
+hilt-navigation-compose = { group = "androidx.hilt", name = "hilt-navigation-compose", version = "1.2.0" }
 
 okhttp3 = { group = "com.squareup.okhttp3", name = "okhttp", version.ref = "okhttp3" }
 retrofit = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofit" }
@@ -48,6 +58,11 @@ okhttp3-logging-interceptor = { group = "com.squareup.okhttp3", name = "logging-
 
 kotlinx-serialization-json = { group = "org.jetbrains.kotlinx", name = "kotlinx-serialization-json", version.ref = "kotlinxSerializationJson" }
 retrofit-serialization = { group = "com.jakewharton.retrofit", name = "retrofit2-kotlinx-serialization-converter", version.ref = "retrofitSerialization" }
+
+androidx-lifecycle-viewModel = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-ktx", version.ref = "androidxLifecycle" }
+androidx-lifecycle-savedState = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-savedstate", version.ref = "androidxLifecycle" }
+core = { group = "com.google.ar", name = "core", version.ref = "core" }
+
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
