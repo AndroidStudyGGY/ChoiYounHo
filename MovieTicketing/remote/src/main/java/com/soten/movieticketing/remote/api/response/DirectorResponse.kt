@@ -5,9 +5,7 @@ import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 
 @Serializable
-data class Company(
-    @SerialName("companyCd")
-    val companyCd: String,
-    @SerialName("companyNm")
-    val companyNm: String
+data class DirectorResponse(
+    @SerialName("peopleNm")
+    val peopleNm: String
 )
